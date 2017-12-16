@@ -1,0 +1,6 @@
+origtempo = input("Please enter the original tempo: ")
+print("The original tempo is " + str(origtempo))
+semitones = input("Please enter the transposing amount in semitones: ")
+newtempo = int(origtempo)*2**(int(semitones)/12)
+finaltempo = float(f"{newtempo:.4f}")
+print("The resulting tempo is " + str(finaltempo))
